@@ -6,7 +6,7 @@ class Log():
     ascii_yellow = "\033[1;33m"
     ascii_reset = "\033[0m"
 
-    def __init__(self, name='ROOT', logger=None, fname=''):
+    def __init__(self, name='ROOT', fname='', logger=None):
         if (logger is None):
             self.logger = Log.init_logger(fname)
         else:
